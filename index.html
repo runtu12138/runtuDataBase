@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Demo</title>
+		<script src="http://www.jq22.com/jquery/jquery-3.3.1.js"></script>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+			}
+			.circularDiv{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: #E0F2FC;
+				border: 1px solid #D6F1FF;
+				text-align: center;
+			}
+			.imgDiv{
+				width: 70px;
+				height: 70px;
+				margin-top: 15px;
+				margin-left: 15px;
+			}
+			.downloadImg{
+				width: 24.5%;
+				height: 24%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="bestTopPart" style="width: 100%;height: 110px;">
+			<img src="img/zhaopin_com/logo.png" style="margin-left: 200px;margin-top: 15px;float: left;"/>
+			<!--<img src="img/zhaopin_com/ma.jpg" style="margin-left: 15px;margin-top: 10px;float: left;"/>-->
+			<div id="topSearch" style="width: 600px;height: 100%;float: right;">
+				<div id="seach-box" style="margin-left: 0px;margin-top: 40px; width: 410px; height: 38px;border: 1px solid #e6e6e6;position: relative;font-size: 14px;color: #333;font-family:'microsoft yahei'">
+					<div id="option" style="width: 120px;height:38px;cursor: pointer;position: relative;">
+						<div style="height: 20px;padding: 0 20px;margin: 9px;line-height: 20px;font-weight: bold;border-right: 1px solid #e6e6e6;">
+							找工作
+						<img src="img/zhaopin_com/arrow-down.png" style="position:absolute;margin-left: 10px;"/>
+						</div>
+					</div>
+					<input id="commonsearchText" type="text" placeholder="请输入关键词，如：销售" maxlength="25" style="width: 200px; text-indent: 15px;font-size: 14px;position: absolute;margin-left: 120px;margin-top: -35px;border: 1px solid transparent;"/>
+					<input type="text" placeholder="|  输入城市" style="text-indent: 15px;font-size: 14px;position: absolute;margin-left: 308px;margin-top: -36px;width: 85px;border: 1px solid transparent;" />
+					<a style="width: 80px;position: absolute;color: #fff;background: #308bff;font-family: 'microsoft yahei';font-size: 14px;outline: none;text-decoration: none;height: 38px;line-height: 38px;text-align: center;cursor: pointer;margin-left: 410px;margin-top: -47.5px;">搜索</a>
+					<p style="font-size: 14px;color: #333;font-weight: bold;">热门搜索</p><input type="text" placeholder="财务   销售   广告   客服设计   投资经理   采购   运营" style="width: 350px; border: 1px solid transparent;margin-left: 60px;margin-top: -19px;position: absolute;" />
+				</div>
+			</div>
+		</div>
+		<div id="topPart" style="width: 100%;height: 325px;">
+			<div id="topBluePart" style="width: 100%;height: 40px;background-image: url(img/13c8c38654f391af3ead570f7b4cbe9.png);">
+				<div style="color: white;font-size: 16px;font-weight: bold;font-family: '微软雅黑';">
+					<p style="float: left;margin-left: 235px;line-height: 40px;">
+						首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						找工作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						找人才&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						找企业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						现场招聘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						校园招聘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						公共服务
+					</p>
+				</div>
+			</div>
+			<img src="img/banner_service.jpg" style="width: 100%;"/>
+		</div>
+		<div id="bodyPart" style="width: 100%;height: 1850px;background:#F2F2F2;">
+			<div id="onLineWork" style="width: 50%;height: 400px;margin-left: 200px;margin-top: 40px;float: left;background-color: white;">
+				<!--网上办事-->
+				<div style="width: 100%;height: 50px;border-bottom: 1px solid #F2F2F2;text-align: center;font-weight: bold;font-size: 16px;line-height: 60px;">
+					<img src="img/zhaopin_service/title-icon01.png" style="margin-left: 40%;margin-top: 10px;float: left;"/>
+					<p style="float: left;margin-left: 20px;">网上办事</p>
+					<div style="border-bottom: 2px solid #0387D1;width: 70px;margin-left: -65px;margin-top: 50px;float: left;"></div>
+				</div>
+				<div class="circularDiv" style="margin-left: 20px;margin-top: 20px;">
+					<img class="imgDiv" src="img/zhaopin_service/service-icon01.png" style="width: 70px;height: 70px;margin-top: 15px;margin-left: 10px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">异地转移</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 180px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon02.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 80px;">生育报销</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 340px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon03.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 78px;">医疗报销</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 500px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon04.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">其他业务一</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 20px;margin-top: 60px;">
+					<img src="img/zhaopin_service/service-icon04.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">其他业务二</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 180px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon04.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">其他业务三</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 340px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon04.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">其他业务四</p>
+				</div>
+			</div>
+			<div id="policyRule" style="width: 20%;height: 750px;float: left;margin-left: 20px;margin-top: 40px;background-color: white;">
+				<!--政策法规-->
+				<div style="width: 100%;height: 40px;border-bottom: 1px solid #F2F2F2;text-align:center;">
+				<p style="text-align:left;font-weight: bold;font-size: 15px;line-height: 50px;margin-left: 10px;">政策法规</p>
+				<div style="border-bottom: 2px solid #0387D1;width: 70px;margin-left: 10px;margin-top: -11px;float: left;"></div>
+					<div style="float: left;width: 100%;font-size: 14px;color:#0387D1;font-weight: bold;text-align: left;">
+						<img src="img/zhaopin_com/new-icon.png" style="float: left;margin-left: 10px;" />&nbsp;山西省“春风行动”招聘会山焦媒专场邀请函
+					</div>
+					<div style="text-align: left;margin-left: 10px;font-size: 14px;color:#AAAAAA;">
+						没有围墙和小区大门，与城市空间融合的商业步行街贯穿其中一一北京首个“街区制”公租房燕保说话的起因...
+						<br/><br/>
+						2018-03-07
+					</div>
+					<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+						给自己设计一条最便捷的道路
+					</div>
+					<div style="text-align: left; font-size: 14px;color:#AAAAAA;margin-left: 10px;">
+						二手房如何选小区？选小区需要注意开发商品牌、物业服务、居住群体、小区口碑等四个因素。
+						<br/><br/>
+						2018-03-07
+					</div>
+					<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+						没有哪次行动会带来100%失败
+					</div>
+					<div style="text-align: left; font-size: 14px;color:#AAAAAA;margin-left: 10px;">
+						选小区看配套，一般来说有5类配套设施必不可少：首先是交通类，其次是生活服务类，再次是医生类别的我...
+						<br/><br/>
+						2018-03-07
+					</div>
+					<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+						给自己设计一条最便捷的道路
+					</div>
+					<div style="text-align: left; font-size: 14px;color:#AAAAAA;margin-left: 10px;">
+						二手房如何选小区？选小区需要注意开发商品牌、物业服务、居住群体、小区口碑等四个因素。
+						<br/><br/>
+						2018-03-07
+					</div>
+					<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+						没有哪次行动会带来100%失败
+					</div>
+					<div style="text-align: left; font-size: 14px;color:#AAAAAA;margin-left: 10px;">
+						选小区看配套，一般来说有5类配套设施必不可少：首先是交通类，其次是生活服务类，再次是医生类别的我...
+						<br/><br/>
+						2018-03-07
+					</div>
+				</div>
+			</div>
+			<div id="onLineQuery" style="width: 50%;height: 600px;margin-left: 200px;margin-top: -330px;float: left;background-color: white;">
+				<!--网上查询-->
+				<div style="width: 100%;height: 50px;border-bottom: 1px solid #F2F2F2;text-align: center;font-weight: bold;font-size: 16px;line-height: 60px;">
+					<img src="img/zhaopin_service/title-icon02.png" style="margin-left: 40%;margin-top: 10px;float: left;"/>
+					<p style="float: left;margin-left: 20px;">网上查询</p>
+					<div style="border-bottom: 2px solid #0387D1;width: 70px;margin-left: -65px;margin-top: 50px;float: left;"></div>
+				</div>
+				<div class="circularDiv" style="margin-left: 20px;margin-top: 20px;">
+					<img class="imgDiv" src="img/zhaopin_service/service-icon05.png" style="width: 70px;height: 70px;margin-top: 15px;margin-left: 5px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 80px;">异地转移</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 180px;margin-top: -100px;">
+					<img class="imgDiv" src="img/zhaopin_service/service-icon06.png" style="width: 70px;height: 70px;margin-top: 15px;margin-left: 10px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">社保待遇</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 340px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon07.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 78px;">医保账户</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 500px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon08.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">退休体检</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 20px;margin-top: 60px;">
+					<img src="img/zhaopin_service/service-icon09.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">权益单</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 180px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon10.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">档案调查</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 340px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon11.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">医疗机构</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 500px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon12.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">人社网点</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 20px;margin-top: 60px;">
+					<img src="img/zhaopin_service/service-icon13.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">其他业务</p>
+				</div>
+				<div class="circularDiv" style="margin-left: 180px;margin-top: -100px;">
+					<img src="img/zhaopin_service/service-icon13.png" style="width: 70px;height: 70px;margin-top: 10px;margin-left: 0px;"/>
+					<p style="font-family: '微软雅黑';font-size: 14px;color: #7F7F7F;line-height: 75px;">其他业务</p>
+				</div>
+			</div>
+			<div id="workFingerpost" style="width: 20%;height: 630px; float: left;margin-left: 20px;margin-top: 20px;background-color: white;">
+				<!--办事指南-->
+				<div style="width: 100%;height: 40px;border-bottom: 1px solid #F2F2F2;text-align:center;">
+					<p style="text-align:left;font-weight: bold;font-size: 15px;line-height: 50px;margin-left: 10px;">办事指南</p>
+					<div style="border-bottom: 2px solid #0387D1;width: 70px;margin-left: 10px;margin-top: -11px;float: left;"></div>
+					<div style="text-align: right;font-size: 15px;color:#AAAAAA;margin-top: -35px;">更多</div>
+				</div>
+				<div style="float: left;width: 100%;font-size: 14px;color:#0387D1;font-weight: bold;text-align: left;margin-top: 10px;">
+					<img src="img/zhaopin_com/new-icon.png" style="float: left;margin-left: 10px;margin-top: 3px;" />
+					&nbsp;苏州市招聘会山焦媒专场...
+					<img src="img/zhaopin_com/arrow-top-blue.png" style="margin-left: 10px;"/>
+				</div>
+				<div style="text-align: left;margin-left: 10px;font-size: 14px;color:#AAAAAA;">
+					没有围墙和小区大门，与城市空间融合的商业步行街贯穿其中一一北京首个“街区制”公租房燕保说话的起因...
+					<br/><br/>
+					2018-03-07
+				</div>
+				<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+					给自己设计一条最便捷的道路
+					<img src="img/zhaopin_com/arrow-down-blue.png" style="margin-left: 10px;"/>
+					<br/><br/>
+					2018-03-07
+				</div>
+				<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+					没有哪次行动会带来100%失...
+					<img src="img/zhaopin_com/arrow-down-blue.png" style="margin-left: 10px;"/>
+					<br/><br/>
+					2018-03-07
+				</div>
+				<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+					没有哪次行动会带来100%失...
+					<img src="img/zhaopin_com/arrow-down-blue.png" style="margin-left: 10px;"/>
+					<br/><br/>
+					2018-03-07
+				</div>
+				<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+					没有哪次行动会带来100%失...
+					<img src="img/zhaopin_com/arrow-down-blue.png" style="margin-left: 10px;"/>
+					<br/><br/>
+					2018-03-07
+				</div>
+				<div style="text-align: left; color: #5E5E5E;font-size: 15px;margin-top: 20px;margin-left: 10px;">
+					没有哪次行动会带来100%失...
+					<img src="img/zhaopin_com/arrow-down-blue.png" style="margin-left: 10px;"/>
+					<br/><br/>
+					2018-03-07
+				</div>
+			</div>
+			<div id="downloadPrefecture" style="width: 50%;height: 400px; float: left;margin-left: 200px;margin-top: -360px;float: left;background-color: white;">
+				<!--下载专区-->
+				<img src="img/zhaopin_download/banner-download.jpg" style="width: 45%;height: 90px;float: left;"/>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/zip-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">房产证过户申请书 .zip</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/rar-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">关于苏州区域...rar</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/pdf-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">安卓文件包.pdf</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/jpg-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 0px;white-space:nowrap;">社会保险补缴程序及材料.jpeg</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/gif-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">同花顺的严谨...gif</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/txt-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">安卓文件包.txt</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/ppt-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;white-space:nowrap;">PPT图表模板整合大全共...png</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/bmp-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">安卓文件包.bmp</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/ppt-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;white-space:nowrap;">社会保险费补缴流程图.ppt</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/doc-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">安卓文件包.doc</div>
+				</div>
+				<div class="downloadImg" style="margin-left: 0px;margin-top: 0px;float: left;">
+					<img src="img/zhaopin_download/new-icon.png" style="margin-top: 10px;margin-left: 25px;float: left;"/>
+					<div style="width: 70px;height: 25px;border: 1px solid #D6F1FF;color: #139FD5;text-align: center;float: left;margin-left: 15px;margin-top: 20px;background-color: #E0F2FC;">下载</div>
+					<div style="font-family: '微软雅黑';font-size: 12px;font-weight: bold;float: left;line-height: 40px;margin-left: 25px;">安卓文件包.psd</div>
+				</div>
+			</div>
+			<!--底部-->
+			<div style="width: 72%;border-bottom: 1px solid #CECECE;float: left;margin-left: 200px;margin-top: 60px;">
+				<p style="font-family: '微软雅黑';font-weight: bold; font-size: 16px;color: #0387D1;margin-left: 30px;margin-top: -30px;">友情链接</p>
+				<div style="border-bottom: 2px solid #0387D1;width: 90px;margin-left: 20px;margin-top: 0px;float: left;"></div>
+			</div>
+			<div style="width: 74%;height: 50px;font-family: '微软雅黑';font-size: 11px;color:#AAAAAA;margin-left: 190px;margin-top: 10px;float: left;">
+				国家人社局&nbsp;&nbsp;江苏人社网址&nbsp;&nbsp;苏州人社网&nbsp;&nbsp;相城人社网&nbsp;&nbsp;中国人才网&nbsp;&nbsp;江苏人才网&nbsp;&nbsp;中国博士后&nbsp;&nbsp;江苏博士后&nbsp;&nbsp;江苏政府网&nbsp;&nbsp;
+				苏州政府网&nbsp;&nbsp;相城政府网&nbsp;&nbsp;江苏党建网&nbsp;&nbsp;苏州党建网&nbsp;&nbsp;相城党建网&nbsp;&nbsp;相城科发局
+				<br/><br/>
+				相城商务局&nbsp;&nbsp;深圳人社网&nbsp;&nbsp;宁波人社网&nbsp;&nbsp;吴中人社网&nbsp;&nbsp;吴江人社网&nbsp;&nbsp;张家港人社网&nbsp;&nbsp;常熟人社网&nbsp;&nbsp;太仓人社网&nbsp;&nbsp;昆山人社网
+			</div>
+			<div style="width: 100%;height: 75px;float: left;background-color: #0387D1;">
+				<img src="img/zhaopin_home/footer-banner.jpg" style="float: left;margin-left: 190px; "/>
+				<div style="width: 70px;height: 25px;border: 1px solid white;color: white;text-align: center;float: left;margin-left: 350px;margin-top: 25px;background-color:#0387D1;">登录</div>
+				<div style="width: 70px;height: 25px;border: 1px solid white;color: #0387D1;text-align: center;float: left;margin-left: 440px;margin-top: -28px;background-color:white;">注册</div>
+			</div>
+			<div style="width: 40%;height: 150px;font-family: '微软雅黑';font-size: 11px;color:#AAAAAA;margin-left: 190px;margin-top: 10px;float: left;">
+				苏州市相城区人才市场服务中心有限公司
+				<br/><br/>
+				地址：苏州市相城区南天成路77号&nbsp;高融大厦一楼&nbsp;&nbsp;&nbsp;邮编：215002&nbsp;&nbsp;&nbsp;邮箱：xchrzp@126.com
+				<br/><br/>
+				开户行：苏州银行相城之行&nbsp;&nbsp;&nbsp;银行账号：7066601071120114003311
+				<br/><br/>
+				苏ICP备09021113号&nbsp;2002 - 2017&nbsp;相城人才网
+			</div>
+			<div style="width: 200px;height: 150px;float: left;margin-left: 160px;margin-top: 10px;">
+				<img src="img/zhaopin_com/tel.png" style="margin-top: 10px;"/>
+				<div style="font-family: '微软雅黑';font-size: 20px;color: black;margin-left: 0px;line-height: 20px;font-weight: bold;">
+					0512-67591312
+				</div>
+				<div style="font-family: '微软雅黑';font-size: 12px;color:#AAAAAA;line-height: 30px;">
+					服务热线（9:00-18:00）
+				</div>
+			</div>
+			<img src="img/zhaopin_com/ma.jpg" style="float: left;margin-top: 20px;" />
+			<div style="font-family: '微软雅黑';font-size: 12px;color:#AAAAAA;line-height: 250px;float: left;margin-left: -70px;">
+					官方微信
+			</div>
+		</div>
+	</body>
+</html>
